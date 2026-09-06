@@ -1,0 +1,46 @@
+syntax on
+filetype plugin indent on
+set nocompatible
+
+set number relativenumber
+set wrap
+set mouse=a
+inoremap jk <Esc>
+nmap <leader>w :w!<cr>
+
+let mapleader = " "
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+nnoremap <leader>/ :nohlsearch<cr>
+
+set showcmd
+set laststatus=2
+set scrolloff=8
+set termguicolors
+
+set backspace=indent,eol,start
+set clipboard=unnamedplus 
+set undofile
+set undodir=~/.vim/undodir
+set noswapfile
+set nobackup
+
+set splitright
+set splitbelow
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+
+nmap <leader>q :q!<cr>
+nnoremap <leader>e :Explore<cr>
+nnoremap <leader>e :Lexplore<cr>
